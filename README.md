@@ -59,7 +59,32 @@ A Django-based backend system for managing hospitals, including modules for doct
    python manage.py createsuperuser
    ```
 
-7. **Start the Server**
+
+7. **Create an Admin Object for the Superuser**
+   Open the Django shell:
+
+   ```bash
+   python manage.py shell
+   ```
+
+   Then run the following in the shell, replacing `your_superuser_username` with your created superuser's username:
+
+   ```python
+   from django.contrib.auth import get_user_model
+   from adminpanel.models import Admin  # Adjust import if your Admin model is elsewhere
+
+   User = get_user_model()
+   user = User.objects.get(username='your_superuser_username')
+   Admin.objects.create(user=user)
+   ```
+
+   Exit the shell:
+
+   ```python
+   exit()
+   ```
+
+8. **Start the Server**
    ```bash
    python manage.py runserver
    ```
