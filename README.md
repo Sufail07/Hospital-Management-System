@@ -43,7 +43,7 @@ A Django-based backend system for managing hospitals, including modules for doct
    ```
 
 4. **Set Environment Variables**
-   - Copy `.env.example` to `.env` and add your Django secret key and Stripe keys.
+   - Create `.env` file and add your Stripe keys.
      ```
      STRIPE_SECRET_KEY=your_stripe_secret_key
      STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
