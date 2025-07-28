@@ -71,7 +71,7 @@ A Django-based backend system for managing hospitals, including modules for doct
 
    ```python
    from django.contrib.auth import get_user_model
-   from adminpanel.models import Admin  # Adjust import if your Admin model is elsewhere
+   from adminpanel.models import Admin  
 
    User = get_user_model()
    user = User.objects.get(username='your_superuser_username')
