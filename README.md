@@ -123,10 +123,9 @@ Contributions are welcome! Please follow these steps:
 
 This project is for educational and demonstration purposes. Please contact the repository owner for license details.
 
-## Contact
-
-- **Owner:** [Sufail07](https://github.com/Sufail07)
 
 ---
 
-*Built with Django & Django REST Framework*
+## 👨‍💻 Author
+
+Built with ❤️ by [Sufail07](https://github.com/Sufail07) :))
